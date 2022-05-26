@@ -4,17 +4,9 @@ Nach der Installtion sollten wir die Versionen von node, npm, and npx prüfen! I
 `npm -v //6.14.15` NPM - verwaltet Pakete, kann aber keine pakete ausführen, Pakete auszuführen. \
 `npx -v //6.14.15` NPX - ein Tool zum Ausführen von Node-Paketen.
 
-<<<<<<< HEAD
 ## Packages installieren & Projekt starten
-=======
-## Befehle
->>>>>>> eeddc509521999af1edee6519a54ccaacc785336
 `npm install` ist der Befehl, der alle Packages installiert und alle Abhänigkeiten auflöst.
 
 `npm run dev` ist der Befehl, der den Dev-Server startet, alles Dateien werden kompiliert (TS, SCSS) und auf Änderungen gewartet. Hierbei wird ein Liveserver inkl. Browser-Refresh gestartet.
 
-<<<<<<< HEAD
 `npm run build` ist der Build-Befehl, hierbei wird das Projekt kompiliert und im `dist/` Verzeichnis hinterlegt. Es wird nicht auf Änderungen an Dateien gewartet.
-=======
-`npm run build` ist der Build-Befehl, hierbei wird das Projekt kompiliert und im `dist/` Verzeichnis hinterlegt. Es wird nicht auf Änderungen an Dateien gewartet.
->>>>>>> eeddc509521999af1edee6519a54ccaacc785336
