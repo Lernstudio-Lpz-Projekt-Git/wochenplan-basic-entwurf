@@ -9,6 +9,6 @@ Nach der Installtion sollten wir die Versionen von node, npm, and npx prüfen! I
 ## Befehle
 `npm install` ist der Befehl, der alle Packages installiert und alle Abhänigkeiten auflöst.
 
-`npm run dev` ist der Befehl, der für das Starten der Umgebung erforderlich ist, alles auf einmal baut und auf Änderungen wartet. Hierbei wird ein Liveserver inkl. Browser-Refresh gestartet.
+`npm run dev` ist der Befehl, der den Dev-Server startet, alles Dateien werden kompiliert (TS, SCSS) und auf Änderungen gewartet. Hierbei wird ein Liveserver inkl. Browser-Refresh gestartet.
 
-`npm run build` ist der Build-Befehl, hierbei wird alles gebaut und im `dist/` Verzeichnis hinterlegt. Es wird nicht auf Änderungen an Dateien gewartet.
+`npm run build` ist der Build-Befehl, hierbei wird das Projekt kompiliert und im `dist/` Verzeichnis hinterlegt. Es wird nicht auf Änderungen an Dateien gewartet.
