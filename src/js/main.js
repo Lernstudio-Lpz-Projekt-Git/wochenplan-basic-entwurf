@@ -12,7 +12,8 @@ let firstThursday = new Date(new Date(yearOfThursday, 0, 4).getTime() + (3 - ((n
 let weekNumber = Math.floor(1 + 0.5 + (currentThursday.getTime() - firstThursday.getTime()) / 86400000 / 7);
 
 document.getElementById("kw").innerHTML =
-  `${getDateOfISOWeek(weekNumber, yearOfThursday)} - KW: ${weekNumber}`;
+  `${getDateOfISOWeek(weekNumber, yearOfThursday)} - KW: ${weekNumber}
+  `;
 
 function getDateOfISOWeek(w, y) {
   const ISOweekStart = new Date(y, 0, 1 + (w - 1) * 7);;
@@ -34,17 +35,18 @@ document.querySelector('#app').innerHTML = `
 <div class="cardTitle">Gespeicherte Menüs</div>
   <div class="addCard">
     <div>Speise hinzufügen</div>
-    <button class="addCard_btn">-</button>
+    <button class="addCard_btn">+</button>
   </div>
 
   <div class="cardContainer">
-  <div class="card noselect" id="card1">
+
+  <div draggable="true" class="card noselect" id="card1">
     <button class="deleteCard_btn">-</button>
     <div class="cardName">Kartoffelsuppe</div>
     <div class="cardDescr">Beschreibung, vegetarisch oder mit Wiener-Würstchen</div>
   </div>
 
-  <div class="card noselect" id="card1">
+  <div draggable="true" class="card noselect" id="card1">
     <button class="deleteCard_btn">-</button>
     <div class="cardName">Grießbrei</div>
     <div class="cardDescr">Beschreibung, vegetarisch und mit Pflaumen</div>

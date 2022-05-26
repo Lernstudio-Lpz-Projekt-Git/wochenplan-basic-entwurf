@@ -57,7 +57,7 @@ main {
       .cardTitle {
         width: 100%;
         background-color: rgb(46, 46, 46);
-        color: #fff;
+        color: $prime;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
         padding: 20px 10px;
         text-align: center;
@@ -152,9 +152,23 @@ main {
         background-color: $prime;
         width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: flex-end;
         align-items: center;
+
+        .download_btn {
+          background-color: $prime;
+          border: none;
+          color: rgb(0, 0, 0);
+          padding: 5px 15px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 1.6rem;
+          margin: 0 40px;
+          z-index: 4;
+          cursor: pointer;
+        }
       }
 
       .plan {
