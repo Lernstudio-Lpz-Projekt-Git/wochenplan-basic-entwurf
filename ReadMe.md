@@ -1,4 +1,4 @@
-#Beschreibung in Arbeit.
+###Beschreibung in Arbeit.
 
 ## Installierte Node Versionen prüfen
 Nach der Installtion sollten wir die Versionen von node, npm, and npx prüfen! Im ergebnis sollten folgende Versionen installiert sein:
