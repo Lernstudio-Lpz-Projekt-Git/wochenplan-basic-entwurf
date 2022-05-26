@@ -1,0 +1,212 @@
+@import "presets";
+
+$headerHeight: 11rem;
+
+main {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin: calc($headerHeight + 6rem) 0 0 0;
+
+  header {
+    background-color: rgb(36, 75, 83);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+  }
+
+  .content {
+    background-color: rgb(255, 248, 145);
+    width: 100%;
+    max-width: 120rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+
+    aside {
+      background-color: rgb(255, 255, 255);
+    }
+
+    #app {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      font-size: 1.2rem;
+      margin: 0px;
+
+      .cardTitle {
+        width: 100%;
+        background-color: rgb(46, 46, 46);
+        color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+        padding: 20px 10px;
+        text-align: center;
+      }
+
+      .addCard {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(250, 250, 250);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+        padding: 10px 10px;
+        text-align: center;
+        margin-bottom: 15px;
+
+        .addCard_btn {
+          //position: absolute;
+          background-color: #31bb29; /* Green */
+          border: none;
+          color: white;
+          padding: 5px 15px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 1.6rem;
+          margin-left: 10px;
+          z-index: 4;
+          cursor: pointer;
+        }
+      }
+
+      .cardContainer {
+        padding: 15px;
+        width: 100%;
+        height: 80vh;
+        overflow: scroll;
+
+        .card {
+          position: relative;
+          background-color: rgb(250, 250, 250);
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          border: 1px rgb(0, 0, 0) dotted;
+          width: 400px;
+          padding: 20px;
+          margin: 12px 50px;
+          font-family: $roboto;
+          font-weight: 500;
+          font-size: 1rem;
+          cursor: move;
+
+          .deleteCard_btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #ff550c; /* Green */
+            border: none;
+            color: white;
+            padding: 0px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.6rem;
+            z-index: 4;
+            cursor: pointer;
+          }
+
+          .cardName {
+            font-size: 1.4rem;
+            padding: 5px 0;
+
+          }
+
+          .cardDescr {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .wochenplan {
+      background-color: beige;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .title {
+        background-color: $prime;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .plan {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        section {
+          font-size: 1.7rem;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          border: 1px #000 dotted;
+          margin: 4px 0;
+
+          h5 {
+            background-color: rgb(53, 156, 42);
+            width: 20%;
+            min-width: 200px;
+            margin: 0;
+            padding: 40px 20px;
+            color: #fff;
+          }
+
+          article {
+            width: 80%;
+            max-width: 100rem;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: flex-start;
+            // align-items: center;
+            padding: 20px 20px;
+            margin-left: 20px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    min-height: 7rem;
+    width: 100%;
+    background-color: rgb(36, 75, 83);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
