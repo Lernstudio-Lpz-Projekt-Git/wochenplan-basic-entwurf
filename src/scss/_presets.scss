@@ -1,3 +1,6 @@
+@import "bootstrap";
+
+
 $prime: #ff6e48;
 $ciBlue: #00fff1;
 $ciRed: #ff00aa;
@@ -56,4 +59,10 @@ h5 {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+.show-form {
+  margin-top: 0px !important;
+  height: 150px !important;
+  opacity: 1 !important;
 }

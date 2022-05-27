@@ -1,4 +1,5 @@
 import './../scss/style.scss'
+import * as bootstrap from 'bootstrap';
 
 let currDate = new Date().toLocaleString().substring(0, 9);
 
@@ -32,78 +33,96 @@ function getDateOfISOWeek(w, y) {
 }
 
 document.querySelector('#app').innerHTML = `
-<div class="cardTitle">Gespeicherte Menüs</div>
+<div class="cardTitle">
+  <form class="form-inline filter">
+  <input class="form-control p-1" type="search" placeholder="Filtern" aria-label="Search">
+<button class="btn btn-outline-success my-2 my-sm-0 filter-btn" type="button">Filtern</button>
+</form>
+</div>
   <div class="addCard">
     <div>Speise hinzufügen</div>
-    <button class="addCard_btn">+</button>
+    <button class="btn btn-success addCard_btn" id="showAddCard">+</button>
   </div>
+  <div class="addCardForm">
+  <input type="text" name="Titel" placeholder="Titel">
+  <input type="text" name="Beschreibung" placeholder="Beschreibung">
+  <button type="button" class="btn btn-success" onclick="addCard()" id="addCard">Hinzufügen</button>
+</div>
 
   <div class="cardContainer">
 
   <div draggable="true" class="card noselect" id="card1">
-    <button class="deleteCard_btn">-</button>
+    <button class="deleteCard_btn"><i class="fa fa-trash"></i></button>
     <div class="cardName">Kartoffelsuppe</div>
     <div class="cardDescr">Beschreibung, vegetarisch oder mit Wiener-Würstchen</div>
   </div>
 
   <div draggable="true" class="card noselect" id="card1">
-    <button class="deleteCard_btn">-</button>
+    <button class="deleteCard_btn"><i class="fa fa-trash"></i></button>
     <div class="cardName">Grießbrei</div>
     <div class="cardDescr">Beschreibung, vegetarisch und mit Pflaumen</div>
   </div>
 
   <div class="card noselect" id="card1">
-  <button class="deleteCard_btn">-</button>
+  <button class="deleteCard_btn"><i class="fa fa-trash"></i></button>
     <div class="cardName">Königsberger Klops</div>
     <div class="cardDescr">Beschreibung, mit Fleisch und mit Kartoffeln</div>
   </div>
 
   <div class="card noselect" id="card1">
-  <button class="deleteCard_btn">-</button>
+  <button class="deleteCard_btn"><i class="fa fa-trash"></i></button>
     <div class="cardName">Königsberger Klops</div>
     <div class="cardDescr">Beschreibung, mit Fleisch und mit Kartoffeln</div>
   </div>
 
   <div class="card noselect" id="card1">
-  <button class="deleteCard_btn">-</button>
+  <button class="deleteCard_btn"><i class="fa fa-trash"></i></button>
     <div class="cardName">Königsberger Klops</div>
     <div class="cardDescr">Beschreibung, mit Fleisch und mit Kartoffeln</div>
   </div>
 
   <div class="card noselect" id="card1">
-  <button class="deleteCard_btn">-</button>
+  <button class="deleteCard_btn"><i class="fa fa-trash"></i></button>
     <div class="cardName">Königsberger Klops</div>
     <div class="cardDescr">Beschreibung, mit Fleisch und mit Kartoffeln</div>
   </div>
 
   <div class="card noselect" id="card1">
-  <button class="deleteCard_btn">-</button>
+  <button class="deleteCard_btn"><i class="fa fa-trash"></i></button>
     <div class="cardName">Königsberger Klops</div>
     <div class="cardDescr">Beschreibung, mit Fleisch und mit Kartoffeln</div>
   </div>
 
   <div class="card noselect" id="card1">
-  <button class="deleteCard_btn">-</button>
+  <button class="deleteCard_btn"><i class="fa fa-trash"></i></button>
     <div class="cardName">Königsberger Klops</div>
     <div class="cardDescr">Beschreibung, mit Fleisch und mit Kartoffeln</div>
   </div>
 
   <div class="card noselect" id="card1">
-  <button class="deleteCard_btn">-</button>
+  <button class="deleteCard_btn"><i class="fa fa-trash"></i></button>
     <div class="cardName">Königsberger Klops</div>
     <div class="cardDescr">Beschreibung, mit Fleisch und mit Kartoffeln</div>
   </div>
 
   <div class="card noselect" id="card1">
-  <button class="deleteCard_btn">-</button>
+  <button class="deleteCard_btn"><i class="fa fa-trash"></i></button>
     <div class="cardName">Königsberger Klops</div>
     <div class="cardDescr">Beschreibung, mit Fleisch und mit Kartoffeln</div>
   </div>
 
   <div class="card noselect" id="card1">
-  <button class="deleteCard_btn">-</button>
+  <button class="deleteCard_btn"><i class="fa fa-trash"></i></button>
     <div class="cardName">Königsberger Klops</div>
     <div class="cardDescr">Beschreibung, mit Fleisch und mit Kartoffeln</div>
   </div>
   </div>
 `;
+
+function showAddCard() {
+  const addCardForm = document.querySelector('.addCardForm');
+  let erg = addCardForm.classList.toggle('show-form');
+  console.log(erg);
+}
+
+document.getElementById("showAddCard").addEventListener("click", showAddCard);
