@@ -5,7 +5,7 @@ Nach der Installtion sollten wir die Versionen von node, npm, and npx prüfen! I
 `npx -v //6.14.15` NPX - ein Tool zum Ausführen von Node-Paketen.
 
 ## <g>Packages installieren & Projekt starten</g>
-`npm install` alle Projekt-Packages werden installiert und die Abhänigkeiten auflöst. Das Projekt ist startfähig.
+`npm install` alle Projekt-Packages werden installiert und die Abhänigkeiten aufgelöst. Das Projekt ist startfähig.
 
 `npm run dev` der Web-Server wird gestartet, alle Dateien werden kompiliert (TS,JS, SCSS) und der Server wartet auf Änderungen.
 
