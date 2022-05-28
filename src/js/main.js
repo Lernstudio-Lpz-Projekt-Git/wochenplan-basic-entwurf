@@ -46,6 +46,10 @@ document.querySelector('#app').innerHTML = `
   <div class="addCardForm">
   <input type="text" name="Titel" placeholder="Titel">
   <input type="text" name="Beschreibung" placeholder="Beschreibung">
+  <div class="form-check vegancheckbox">
+    <input class="form-check-input" type="checkbox" id="veg" value="veg">
+    <label class="form-check-label" for="veg">Vegetarisch</label>
+</div>
   <button type="button" class="btn btn-success" onclick="addCard()" id="addCard">Hinzufügen</button>
 </div>
 
