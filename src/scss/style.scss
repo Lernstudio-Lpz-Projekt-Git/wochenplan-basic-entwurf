@@ -3,10 +3,10 @@
 $headerHeight: 11rem;
 
 main {
-  width: 100%;
+  width: 99%;
   height: 100%;
   min-height: 100vh;
-  font-size: 2rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,9 +143,9 @@ main {
           margin: 6px 0 ;
         }
         &:hover {
-          margin-top: 0px;
-          height: 150px;
-          opacity: 1;
+          // margin-top: 0px;
+          // height: 150px;
+          // opacity: 1;
         }
       }
 
@@ -160,9 +160,9 @@ main {
           background-color: rgb(250, 250, 250);
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           border: 1px rgb(0, 0, 0) dotted;
-          width: 400px;
+          width: 100%;
           padding: 20px;
-          margin: 12px 50px;
+          margin: 12px 0px;
           font-family: $roboto;
           font-weight: 500;
           font-size: 1rem;
